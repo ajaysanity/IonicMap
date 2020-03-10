@@ -1,0 +1,23 @@
+
+<ion-content  [scrollEvents]="true">
+  <ion-grid>
+    <ion-row class="row">
+      <ion-col class="col-search" size="4" >
+          <ion-searchbar (ionFocus)="detectFocus()" (ionBlur)="loseFocus()"></ion-searchbar>
+          <ion-list *ngIf="isFocus">
+            <ion-item *ngFor="let location of locations" (click)="searchLocation(location)">
+                {{location.name}}
+            </ion-item>
+          </ion-list>
+    
+     
+      </ion-col>
+      <ion-col class="col-map" size="8">
+        <div #mapElement id="map">
+
+        </div>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

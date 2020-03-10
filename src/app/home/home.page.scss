@@ -1,0 +1,27 @@
+ion-content ion-toolbar {
+  --background: translucent;
+  overflow: scroll !important;
+  height: auto;
+}
+#map{
+  height: 55vh;  
+  margin: 10% 5% 0 0;
+}
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+.col-search{
+  padding: 25px;
+  height: 100%;
+
+}
+
+
+.gm-style .gm-style-iw {
+.content{
+  background-color: red !important;
+}
+}    
